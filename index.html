@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PhotoSnap — Galería</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>PhotoSnap</h1>
+    <p>Galería minimal — haz clic en una imagen para verla en grande</p>
+  </header>
+
+  <main class="container">
+    <section class="gallery" id="gallery">
+      <!-- Imágenes de ejemplo (sustituye por las tuyas) -->
+      <img src="https://picsum.photos/id/1015/600/400" alt="Paisaje 1" loading="lazy" />
+      <img src="https://picsum.photos/id/1016/600/400" alt="Paisaje 2" loading="lazy" />
+      <img src="https://picsum.photos/id/1025/600/400" alt="Perro" loading="lazy" />
+      <img src="https://picsum.photos/id/1035/600/400" alt="Ciudad" loading="lazy" />
+      <img src="https://picsum.photos/id/1043/600/400" alt="Montañas" loading="lazy" />
+      <img src="https://picsum.photos/id/1069/600/400" alt="Mar" loading="lazy" />
+    </section>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+    <button class="lb-close" id="lbClose" aria-label="Cerrar">✕</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+    <img id="lbImage" src="" alt="" />
+    <button class="lb-next" id="lbNext" aria-label="Siguiente">›</button>
+  </div>
+
+  <footer class="site-footer">
+    <small>PhotoSnap • Proyecto pequeño</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
